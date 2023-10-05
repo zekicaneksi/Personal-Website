@@ -1,0 +1,49 @@
+.headerCss{
+        font-size: 10vw;
+        font-family: "Lacquer";
+        color: #A02828;
+        align-self: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+}
+
+.outerContainerCss{
+        height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      justify-items: center;
+}
+
+.innerContainerCss{
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: #A02828;
+    align-self: center;
+    font-family: "IMFellGreat";
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 1024px){
+    .outerContainerCss{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+
+    .headerCss {
+        grid-column-end: 1;
+        font-size: 6vh;
+    }
+
+    .outerContainerCss div{
+        width: 15vh !important;
+        height: 15vh !important;
+    }
+
+    .label {
+        font-size: 3vh;
+    }
+}

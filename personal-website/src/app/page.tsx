@@ -1,27 +1,23 @@
 'use client'
 
+import styles from './page.module.css'
+
 import ResumeIcon from '@/icon/Resume';
 import FolderIcon from '@/icon/Folder';
-import SpiderIcon from '@/icon/Spider';
-import SpiderWebIcon from '@/icon/SpiderWeb';
-import SpiderLineIcon from '@/icon/SpiderLine';
 
 export default function Home() {
     
-    const headerCss = {
-        fontSize: "8rem",
-        fontFamily: 'Lacquer',
-        color: '#A02828',
-    }
-
   return (
-    <div>
-        <p style={headerCss}>Zeki Can EKSI</p>
-        <ResumeIcon/>
-        <FolderIcon/>
-        <SpiderIcon/>
-        <SpiderWebIcon/>
-        <SpiderLineIcon/>
+    <div className={styles.outerContainerCss}>
+        <p className={styles.headerCss}>Zeki Can EKSI</p>
+        <div className={styles.innerContainerCss}>
+            <ResumeIcon width={15} height={15}/>
+            <p className={styles.label}>CV</p>
+        </div>
+        <div className={styles.innerContainerCss}>
+            <FolderIcon width={15} height={15}/>
+            <p className={styles.label}>Projects</p>
+        </div>
     </div>
   )
 }

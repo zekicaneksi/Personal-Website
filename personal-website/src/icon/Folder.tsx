@@ -1,11 +1,12 @@
 import React from "react";
 
-function Icon() {
+function Icon(props: {width: number, height: number}) {
   return (
+  <div style={{width: props.width + "vw", height: props.height + "vw", alignSelf: 'center'}}> 
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="800"
-      height="800"
+      width={"100%"}
+      height={"100%"}
       className="icon"
       transform="rotate(90)"
       viewBox="0 0 1024 1024"
@@ -52,6 +53,7 @@ function Icon() {
         ></path>
       </g>
     </svg>
+    </div>
   );
 }
 
