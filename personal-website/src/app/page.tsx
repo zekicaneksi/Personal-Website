@@ -1,7 +1,12 @@
 'use client'
 
-export default function Home() {
+import ResumeIcon from '@/icon/Resume';
+import FolderIcon from '@/icon/Folder';
+import SpiderIcon from '@/icon/Spider';
+import SpiderWebIcon from '@/icon/SpiderWeb';
+import SpiderLineIcon from '@/icon/SpiderLine';
 
+export default function Home() {
     
     const headerCss = {
         fontSize: "8rem",
@@ -12,6 +17,11 @@ export default function Home() {
   return (
     <div>
         <p style={headerCss}>Zeki Can EKSI</p>
+        <ResumeIcon/>
+        <FolderIcon/>
+        <SpiderIcon/>
+        <SpiderWebIcon/>
+        <SpiderLineIcon/>
     </div>
   )
 }
