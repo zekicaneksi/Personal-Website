@@ -1,0 +1,10 @@
+.loadingScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0vw;
+    height: 100vh;
+    background-color: aliceblue;
+    z-index: 100;
+    transition: width 3s;
+}
