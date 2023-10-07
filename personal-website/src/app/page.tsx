@@ -11,13 +11,12 @@ import { Context as LoadingScreenContext } from '@/context/loading_screen';
 
 
 export default function Home() {
-
-    
-    const {isLoading, setIsLoading, navigate} = useContext(LoadingScreenContext);
+ 
+    const {isLoading, setIsLoading, navigate} = useContext(LoadingScreenContext) || {};
 
     useEffect(() => {
-        setIsLoading(false)
-    }, [])
+        if(setIsLoading !== undefined) setIsLoading(false)
+    }, [setIsLoading])
 
   return (
     <div className={styles.outerContainerCss}>
@@ -26,7 +25,7 @@ export default function Home() {
             <ResumeIcon width={15} height={15}/>
             <p className={styles.label}>CV</p>
         </div>
-        <div className={styles.innerContainerCss} onClick={() => navigate('projects')}>
+        <div className={styles.innerContainerCss} onClick={() => {if(navigate !== undefined )navigate('projects')}}>
             <FolderIcon width={15} height={15}/>
             <p className={styles.label}>Projects</p>
         </div>
