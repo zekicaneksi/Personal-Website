@@ -1,10 +1,16 @@
-.loadingScreen{
+.loadingScreenContainer{
     position: absolute;
     top: 0;
     left: 0;
-    width: 0vw;
+    width: 100vw;
     height: 100vh;
-    background-color: aliceblue;
+    pointer-events: none;
     z-index: 100;
-    transition: width 3s;
+}
+
+.curtain{
+    position: absolute;
+    top: 0;
+    transition: width 2s, left 2s;
+    height: 100vh;
 }
