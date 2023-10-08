@@ -22,6 +22,7 @@ export default function Home() {
     <div className={styles.outerContainerCss}>
         <p className={styles.headerCss}>Zeki Can EKSI</p>
         <div className={styles.innerContainerCss}>
+            <a target="_blank" href="/zeki_can_eksi_cv_en.pdf" style={{width: '100%', height: '100%', position: 'absolute'}}></a>
             <ResumeIcon width={15} height={15}/>
             <p className={styles.label}>CV</p>
         </div>
