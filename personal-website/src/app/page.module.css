@@ -20,6 +20,22 @@
     flex-direction: column;
 }
 
+
+.outerContainerCss .innerContainerCss svg:hover{
+    transition: all 2s;
+    border: orange 0.3em solid;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.outerContainerCss .innerContainerCss:last-of-type svg:hover{
+    transform: rotate(90deg) scale(1.1) !important;
+}
+
+.outerContainerCss .innerContainerCss:first-of-type svg:hover{
+    transform: scale(1.1);
+}
+
 .label {
     color: #A02828;
     align-self: center;

@@ -8,8 +8,8 @@ function Icon(props: {width: number, height: number}) {
       width={"100%"}
       height={"100%"}
       className="icon"
-      transform="rotate(90)"
       viewBox="0 0 1024 1024"
+      style={{transform: 'rotate(90deg)'}}
     >
       <g>
         <path d="M390.4 200.8l-8-8c-10.4-10.4-24-16-38.4-16H180.8c-29.6 0-54.4 24-54.4 54.4v562.4c0 29.6 24 54.4 54.4 54.4h757.6c29.6 0 54.4-24 54.4-54.4V270.4c0-29.6-24-54.4-54.4-54.4H428.8c-14.4.8-28-4.8-38.4-15.2z"></path>
