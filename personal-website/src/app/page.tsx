@@ -12,7 +12,7 @@ import { Context as LoadingScreenContext } from '@/context/loading_screen';
 
 export default function Home() {
  
-    const {isLoading, setIsLoading, navigate} = useContext(LoadingScreenContext) || {};
+    const {setIsLoading, navigate} = useContext(LoadingScreenContext) || {};
 
     useEffect(() => {
         if(setIsLoading !== undefined) setIsLoading(false)

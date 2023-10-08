@@ -7,7 +7,6 @@ import styles from './loading_screen.module.css';
 import SpiderIcon from '@/icon/Spider'
 
 interface LoadingScreenContextType {
-  isLoading: boolean;
   setIsLoading: Function;
   navigate: Function;
 }
@@ -56,7 +55,7 @@ const ContextProvider = (props: {children : React.ReactNode}) => {
     }
 
   return (
-    <Context.Provider value={{isLoading, setIsLoading, navigate}}>
+    <Context.Provider value={{setIsLoading, navigate}}>
         <div className={styles.loadingScreenContainer}>
            <div style={{width: (isLoading ? '50vw' : '0vw'), left: '0vw', ...(getCurtainCss('left')) }} className={`${styles.curtain}`}></div>
            <div style={{width: (isLoading ? '50vw' : '0vw'), left: (isLoading ? '50vw' : '100vw'), ...(getCurtainCss('right')) }} className={`${styles.curtain}`}></div>
