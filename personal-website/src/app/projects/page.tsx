@@ -1,17 +1,9 @@
 "use client";
 
 import { useContext, useEffect } from "react";
+
 import { Context as LoadingScreenContext } from "@/context/loading_screen";
-
-import styles from "./page.module.css";
-
-const ProjectCube = () => {
-  return (
-    <div className={styles.cubeDiv}>
-      <p>Hello</p>
-    </div>
-  );
-};
+import ProjectCube from "./ProjectCube";
 
 export default function Page() {
   const { setIsLoading, navigate } = useContext(LoadingScreenContext) || {};
@@ -22,16 +14,6 @@ export default function Page() {
 
   return (
     <div>
-      <div>
-        <h1
-          style={{ color: "red" }}
-          onClick={() => {
-            if (navigate !== undefined) navigate("/");
-          }}
-        >
-          click on me to go back
-        </h1>
-      </div>
       <div
         style={{
           width: "100vw",
@@ -41,7 +23,12 @@ export default function Page() {
         }}
       >
         {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => (
-          <ProjectCube key={key} />
+          <ProjectCube
+            key={key}
+            title={"Hell232o3 yaelow melow fellow"}
+            imgSrc={"/project_thumbnail/36.jpg"}
+            projectUrl={"test-project"}
+          />
         ))}
       </div>
     </div>

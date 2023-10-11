@@ -1,0 +1,26 @@
+.backIcon {
+  stroke: #fff;
+  padding: 0.5em;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 3;
+}
+.backIcon svg:hover {
+  stroke: #333;
+}
+
+@media only screen and (min-width: 2000px) {
+  .backIcon {
+    width: 6em !important;
+    height: 6em !important;
+  }
+}
+
+@media only screen and (min-width: 3000px) {
+  .backIcon {
+    width: 7em !important;
+    height: 7em !important;
+  }
+}
