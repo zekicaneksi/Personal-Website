@@ -1,8 +1,5 @@
-import { useContext } from "react";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import styles from "./ProjectCube.module.css";
-import { Context as LoadingScreenContext } from "@/context/loading_screen";
 
 interface IProps {
   title: string;
@@ -11,16 +8,13 @@ interface IProps {
 }
 
 const ProjectCube = (props: IProps) => {
-  const pathname = usePathname();
-
   const { title, imgSrc, projectUrl } = props;
-  const { setIsLoading, navigate } = useContext(LoadingScreenContext) || {};
 
   return (
     <div
       className={styles.cubeDiv}
       onClick={() => {
-        if (navigate !== undefined) navigate(pathname + "/" + projectUrl);
+        window.open(projectUrl, "_blank")?.focus();
       }}
     >
       <div className={styles.transparentLayer}></div>

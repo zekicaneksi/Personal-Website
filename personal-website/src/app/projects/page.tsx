@@ -60,18 +60,25 @@ export default function Page() {
         }}
       >
         <ProjectCube
-          title={"Hell232o3 yaelow melow fellow"}
-          imgSrc={"/project_thumbnail/36.jpg"}
-          projectUrl={"test-project"}
+          title={"Chess Website"}
+          imgSrc={"/project_thumbnail/chess.png"}
+          projectUrl={"https://github.com/zekicaneksi/Bomchess"}
         />
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => (
-          <ProjectCube
-            key={key}
-            title={"Hell232o3 yaelow melow fellow"}
-            imgSrc={"/project_thumbnail/36.jpg"}
-            projectUrl={"test-project"}
-          />
-        ))}
+        <ProjectCube
+          title={"Smart Todo Website"}
+          imgSrc={"/project_thumbnail/todo.png"}
+          projectUrl={"https://github.com/zekicaneksi/Nora"}
+        />
+        <ProjectCube
+          title={"This Website"}
+          imgSrc={"/project_thumbnail/site.png"}
+          projectUrl={"https://github.com/zekicaneksi/Personal-Website"}
+        />
+        <ProjectCube
+          title={"Online ffprobe Site"}
+          imgSrc={"/project_thumbnail/magnify.png"}
+          projectUrl={"https://github.com/zekicaneksi/Online-ffprobe-Site"}
+        />
         {[...Array(spooderCount)].map((e, i) => (
           <div
             key={i}
