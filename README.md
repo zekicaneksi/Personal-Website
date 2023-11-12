@@ -20,5 +20,12 @@ Open [http://localhost:3000](http://localhost:3000) to see the homepage.
 
 ## Deployment
 
-..todo..
+- To build the project
+  ```bash
+  npm run build
+  ```
 
+- To run the project
+  ```bash
+  npm run start
+  ```
